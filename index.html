@@ -1,0 +1,123 @@
+<style>
+
+  body {
+    background-color: hsl(216, 100%, 63%);
+  }
+  
+  #question {
+    
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    font-family: sans-serif
+  }
+  
+  #yes {
+    color: white;
+    font-size: 50px;
+    font-family: sans-serif;
+    display: inline;
+  }
+  
+  img{
+    display: none;
+  }
+  
+  .happyt {
+    font-size: 30px;
+    font-family: sans-serif;
+    color: white;
+    display: none;
+
+  }
+  
+  .happy:hover .happyt {
+    display: block;
+  }
+  
+  .happy:hover img {
+    display: block;
+  }
+  
+  #no {
+    color: white;
+    font-size: 50px;
+    font-family: sans-serif;
+    display: inline;
+  
+  }
+  
+  .sadt {
+    font-size: 30px;
+    font-family: sans-serif;
+    color: white;
+    display: none;
+
+  }
+  
+  .sad:hover .sadt {
+    display: block;
+  }
+  
+  .sad:hover img {
+    display: block;
+  }
+  
+  #sadduck {
+    
+    width: 300px;
+  }
+  
+/*   .happy, .sad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  */
+  .responses {
+  display: flex;
+  justify-content: center; /* Centers them horizontally */
+  gap: 300px; /* Adds space between Yes and No */
+}
+
+  
+
+</style>
+<title> Eng Fellows Meeting Survey </title>
+
+<body>
+
+<h1 id="question">
+  Have you had your mentee meeting yet?
+  </h1>
+  
+
+<div class="responses">
+  
+<div class="happy">
+  <h1 id="yes">
+  Yes!!
+  </h1>
+  
+  <div class="happyt">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY8aMS_jtXIJTp95psOPi9MEYVqbdsIEhbEg&s" alt="Happy duck">
+    
+    Congrats! You made the duck happy! Click <a href="https://forms.gle/Ha32pxZqZ5gcVBUV7" target="_blank">here</a> to complete the feedback form or the duck will cry.
+    
+  </div>
+  </div>
+
+<div class="sad">
+  <h1 id="no">
+    No :(
+  </h1>
+  <div class="sadt">
+    You made the duck sad. Schedule the meeting soon to make him happy again.
+    <img id="sadduck" src="https://i.pinimg.com/736x/0b/15/d6/0b15d6ea6ac8f4c13586a21f80aabd03.jpg" alt="Sad duck">
+  </div>
+  
+  
+  </div>
+  </div>
+
+</body>
