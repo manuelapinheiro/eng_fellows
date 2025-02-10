@@ -39,19 +39,20 @@
     display: block;
   }
   
-/*   .happy:hover .happyt {
-    display: block;
-  } */
   
   .yes:focus +.happyt img {
     display: block;
   }
   
-  #no {
+  .no {
     color: white;
     font-size: 50px;
     font-family: sans-serif;
     display: inline;
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-weight: bold;
   
   }
   
@@ -63,11 +64,11 @@
 
   }
   
-  .sad:hover .sadt {
+  .no:focus + .sadt {
     display: block;
   }
   
-  .sad:hover img {
+  .no:focus +.sadt img {
     display: block;
   }
   
@@ -76,16 +77,10 @@
     width: 300px;
   }
   
-/*   .happy, .sad {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  }
-  */
   .responses {
   display: flex;
-  justify-content: center; /* Centers them horizontally */
-  gap: 300px; /* Adds space between Yes and No */
+  justify-content: center; 
+  gap: 300px;
 }
 
   
@@ -114,9 +109,8 @@
   </div>
 
 <div class="sad">
-  <h1 id="no">
-    No :(
-  </h1>
+  <button class="no">
+    No :( </button>
   <div class="sadt">
     You made the duck sad. Schedule the meeting soon to make him happy again.
     <img id="sadduck" src="https://i.pinimg.com/736x/0b/15/d6/0b15d6ea6ac8f4c13586a21f80aabd03.jpg" alt="Sad duck">
