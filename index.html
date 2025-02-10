@@ -12,11 +12,15 @@
     font-family: sans-serif
   }
   
-  #yes {
+  .yes {
     color: white;
     font-size: 50px;
     font-family: sans-serif;
     display: inline;
+    border: none;
+    background: none;
+    font-weight: bold;
+    cursor: pointer;
   }
   
   img{
@@ -31,11 +35,15 @@
 
   }
   
-  .happy:hover .happyt {
+  .yes:focus + .happyt {
     display: block;
   }
   
-  .happy:hover img {
+/*   .happy:hover .happyt {
+    display: block;
+  } */
+  
+  .yes:focus +.happyt img {
     display: block;
   }
   
@@ -95,9 +103,7 @@
 <div class="responses">
   
 <div class="happy">
-  <h1 id="yes">
-  Yes!!
-  </h1>
+  <button class="yes">Yes!!</button>
   
   <div class="happyt">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY8aMS_jtXIJTp95psOPi9MEYVqbdsIEhbEg&s" alt="Happy duck">
